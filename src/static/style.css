@@ -1,0 +1,24 @@
+/* ------- layout ------- */
+.horizontal-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------- layout ------- */
+.brand-style{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 45px;
+}
+.navbar-nav > li{
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+/* ------- home ------- */
+
+/* ------- search ------- */
+
+/* ------- result ------- */
+
+/* ------- about ------- */
