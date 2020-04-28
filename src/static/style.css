@@ -3,6 +3,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ------- layout ------- */
@@ -16,6 +29,69 @@
   }
 
 /* ------- home ------- */
+
+.welcome-container{
+    height: 90%;
+    background-image: url(shipibo-conibo-pattern.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.welcome-text{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    color: white;
+}
+.welcome-subtext{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    color: whitesmoke;
+    font-style: italic;
+}
+
+.people-container{
+    background-color: whitesmoke;
+    padding: 4%;
+}
+
+.mission-container{
+    background-color: whitesmoke;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+}
+
+.technology-container{
+    padding: 4%;
+    background-color: tan;
+  
+}
+
+.section-title{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 30px;
+    border: tan 1pt solid;
+}
+
+.information-text{
+    text-align: justify;
+    font-family: "Courier New", Courier, monospace;
+}
+.hr {
+    display: inline-block;
+}
+
+.hr:after {
+    content: '';
+    display: block;
+    border-top: 1px solid black;
+    margin-top: 0.3em;
+}
+
+.family-img{
+    width: 80%;
+}
 
 /* ------- search ------- */
 
