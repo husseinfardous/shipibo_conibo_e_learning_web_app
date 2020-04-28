@@ -13,8 +13,16 @@ with open(src_file_name, "r", newline="", encoding="latin-1") as src_file:
     corpus_reader = csv.reader(src_file)
 
     for row in corpus_reader:
-        shi_sentences.append(row[2].capitalize() + ".")
-        spa_sentences.append(row[3].capitalize() + ".")
+
+        if row[2].endswith("?") or row[2].endswith("."):
+            shi_sentences.append(row[2].lower())
+        else:
+            shi_sentences.append(row[2].lower() + ".")
+
+        if row[3].endswith("?") or row[3].endswith("."):
+            spa_sentences.append(row[3].lower())
+        else:
+            spa_sentences.append(row[3].lower() + ".")
 
 with open(target_shi_file_name, "w") as target_shi_file:
     for shi_sentence in shi_sentences:
