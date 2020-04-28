@@ -1,8 +1,8 @@
 adbackoff 0
-c Bible.tok.spa_Bible.tok.shi.snt
+c religious/Bible.tok.spa_Bible.tok.shi.snt
 compactadtable 1
 compactalignmentformat 0
-corpusfile Bible.tok.spa_Bible.tok.shi.snt
+corpusfile religious/Bible.tok.spa_Bible.tok.shi.snt
 countcutoff 1e-06
 countcutoffal 1e-05
 countincreasecutoff 1e-06
@@ -19,9 +19,9 @@ emprobforempty 0.4
 emsmoothhmm 2
 hmmdumpfrequency 0
 hmmiterations 5
-l word_alignment/2020-04-24.234925.husseinfardous.log
+l religious/word_alignment/2020-04-28.142202.husseinfardous.log
 log 0
-logfile word_alignment/2020-04-24.234925.husseinfardous.log
+logfile religious/word_alignment/2020-04-28.142202.husseinfardous.log
 m1 5
 m2 0
 m3 5
@@ -62,10 +62,10 @@ noiterationsmodel6 0
 nsmooth 64
 nsmoothgeneral 0
 numberofiterationsforhmmalignmentmodel 5
-o word_alignment/Bible_Words
+o religious/word_alignment/Bible_Words
 onlyaldumps 0
-outputfileprefix word_alignment/Bible_Words
-outputpath word_alignment/
+outputfileprefix religious/word_alignment/Bible_Words
+outputpath religious/word_alignment/
 p 0
 p0 -1
 peggedcutoff 0.03
@@ -73,15 +73,15 @@ pegging 0
 probcutoff 1e-07
 probsmooth 1e-07
 readtableprefix 
-s Bible.tok.spa.vcb
-sourcevocabularyfile Bible.tok.spa.vcb
-t Bible.tok.shi.vcb
+s religious/Bible.tok.spa.vcb
+sourcevocabularyfile religious/Bible.tok.spa.vcb
+t religious/Bible.tok.shi.vcb
 t1 0
 t2 0
 t2to3 0
 t3 0
 t345 0
-targetvocabularyfile Bible.tok.shi.vcb
+targetvocabularyfile religious/Bible.tok.shi.vcb
 tc 
 testcorpusfile 
 th 0
