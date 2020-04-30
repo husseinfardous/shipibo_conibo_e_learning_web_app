@@ -1,11 +1,14 @@
 {% extends "aquinti_layout.html" %}
 
 {% block scripts %} 
+<script>
+    
+    var language_setting = {{ language_setting | tojson }};
 
+</script>
 {% endblock %} 
 
 {% block content %}
-
     <div class="Header">
 
         <!-- About Introduction -->
@@ -67,5 +70,4 @@
         </div>
         
     </div>
-
 {% endblock %}
