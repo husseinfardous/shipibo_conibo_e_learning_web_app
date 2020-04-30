@@ -1,6 +1,9 @@
+
+
 $(document).ready(function(){
+
+    // webpage language
     $('[lang="es"]').hide();
-    
 
     $('#lang_link').click(function() {
         if ($('#lang_link').text() =='ESPAÑOL'){
@@ -11,13 +14,6 @@ $(document).ready(function(){
         }
         $('[lang="es"]').toggle();
         $('[lang="en"]').toggle();   
-   
     });
-
-
-
-    
-
-
 
 });

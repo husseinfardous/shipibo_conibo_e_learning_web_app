@@ -1,0 +1,71 @@
+{% extends "aquinti_layout.html" %}
+
+{% block scripts %} 
+
+{% endblock %} 
+
+{% block content %}
+
+    <div class="Header">
+
+        <!-- About Introduction -->
+        <div class="row">
+            <div class="col-md-12 horizontal-center">
+                <h1 lang="en" class="about-header"> The Team </h1>
+                <h1 lang="es" class="about-header"> El Equipo </h1>
+            </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 horizontal-center">
+                <div lang="en" class="about-description"> We are both undergraduate students studying Computer Science at Columbia University. Aquínti is our final project for a Columbia course titled Multilingual Technologies and Language Diversity, which explores the impact of digital technologies on the ecosystem of language diversity. <br> <br>  In recent years tools have been built to revitalize the Shipibo-Conibo language; however these tools are only accessible to researchers and technologists. Therefore, for our final project we chose to create an e-Learning web app because we wanted to have an impact on the Shipibo-Conibo Community directly.  We hope that Aquínti is a great aid to those who wish to recuperate an essential aspect of their ancestors’ history.  </div>
+                <div lang="es" class="about-description"> Somos una pareja de estudiantes universitarios que estudian Informática  en Columbia University. Aquínti es nuestro proyecto final para un curso de Columbia titulado Tecnologías multilingües y diversidad de idiomas, que explora el impacto de las tecnologías digitales en el ecosistema de la diversidad de idiomas. <br> <br> En los últimos años se han creado herramientas para revitalizar el lenguaje Shipibo-Conibo; sin embargo, estas herramientas solo son accesibles para investigadores y tecnólogos. Por lo tanto, para nuestro proyecto final, elegimos crear una aplicación web de e-Learning porque queríamos tener un impacto directo en la comunidad Shipibo-Conibo. Esperamos que Aquínti sea de gran ayuda para aquellos que desean recuperar un aspecto esencial de la historia de sus antepasados.</div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <!-- Individual Profiles -->
+
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6">
+                <div class="profile-container">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="card text-center card-style">
+                                <h4>
+                                    Hussein Fardous
+                                </h4>
+                                <img class="card-img-top" src="{{url_for('static', filename='hussein_img.png')}}" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Email: hf2334@columbia.edu</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card text-center card-style">
+                                <h4>
+                                    Janill Lema 
+                                </h4>
+                                <img class="card-img-top" src="{{url_for('static', filename='janill_img.png')}}" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Email: jl4817@columbia.edu</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+        
+    </div>
+
+{% endblock %}

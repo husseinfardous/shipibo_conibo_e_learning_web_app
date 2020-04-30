@@ -5,6 +5,7 @@
 {% endblock %} 
 
 {% block content %}
+
     <div class="container-fluid">
         
         <!-- Welcome Introduction -->
@@ -25,17 +26,18 @@
             </div>    
         </div>
         
-
         <!-- About the Shipibo Conibo People -->
-         <div class="row people-container">
+         <div class="row about-shipibo-container horizontal-center">
             <div class="col-md-6">
                 <img src="{{url_for('static', filename='shipibo-conibo-family.jpg')}}"  class="center family-img"/>
             </div>
-            <div class="col-md-6 border">
-                <h3 lang="en" class="section-title hr"> About the Shipibo-Conibo People </h3>
-                <h3 lang="es" class="section-title hr"> Sobre La Gente Shipibo-Conibo</h3>
-                <div class="information-text" lang="en"> The Shipibo-Conibo people mainly live along the Ucayali River in the Amazon rainforest in Peru. They are known for their traditions such as ayahuasca shamanism and their artisanal skills, which include textile making, embroidery and pottery. There are currently 22,000 native speakers of the Shipibo-Conibo language. The current AES (measures how endangered a language is according to an agglomeration of databases) for the language is "Threatened". </div>
-                <div class="information-text"  lang="es"> El pueblo Shipibo-Conibo vive principalmente al lado del río Ucayali en la selva amazónica de Perú. Son conocidos por sus tradiciones como el chamanismo de ayahuasca y sus habilidades artesanales, que incluyen la fabricación de textiles, bordados y cerámica. Hoy en día hay 22,000 hablantes nativos del idioma Shipibo-Conibo. El AES (mide qué tan en peligro está un idioma según una aglomeración de bases de datos) para el idioma es "Amenazado".</div>
+            <div class="col-md-6">
+                <div>
+                    <h3 lang="en" class="section-title hr"> About the Shipibo-Conibo People </h3>
+                    <h3 lang="es" class="section-title hr"> Sobre La Gente Shipibo-Conibo</h3>
+                    <div class="information-text" lang="en"> The Shipibo-Conibo people mainly live along the Ucayali River in the Amazon rainforest in Peru. They are known for their traditions such as ayahuasca shamanism and their artisanal skills, which include textile making, embroidery and pottery. There are currently 22,000 native speakers of the Shipibo-Conibo language. The current AES (measures how endangered a language is according to an agglomeration of databases) for the language is "Threatened". </div>
+                    <div class="information-text"  lang="es"> El pueblo Shipibo-Conibo vive principalmente al lado del río Ucayali en la selva amazónica de Perú. Son conocidos por sus tradiciones como el chamanismo de ayahuasca y sus habilidades artesanales, que incluyen la fabricación de textiles, bordados y cerámica. Hoy en día hay 22,000 hablantes nativos del idioma Shipibo-Conibo. El AES (mide qué tan en peligro está un idioma según una aglomeración de bases de datos) para el idioma es "Amenazado".</div>
+                </div>
             </div>
         </div>
 
@@ -64,6 +66,7 @@
             </div>
             <div class="col-md-3"></div>
         </div>
-
+        
     </div>
+
 {% endblock %}

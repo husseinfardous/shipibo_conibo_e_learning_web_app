@@ -6,7 +6,9 @@ app = Flask(__name__)
 def render_index_html():
     return render_template('home.html')
 
-
+@app.route("/about_team", methods=['POST','GET'])
+def render_about_team_html():
+    return render_template('about_team.html')
 
 if __name__ == '__main__':
     app.run()

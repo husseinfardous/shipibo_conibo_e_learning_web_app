@@ -50,7 +50,7 @@
     font-style: italic;
 }
 
-.people-container{
+.about-shipibo-container{
     background-color: whitesmoke;
     padding: 4%;
 }
@@ -64,14 +64,13 @@
 
 .technology-container{
     padding: 4%;
-    background-color: tan;
+    background-color: burlywood;
   
 }
 
 .section-title{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 30px;
-    border: tan 1pt solid;
 }
 
 .information-text{
@@ -97,4 +96,29 @@
 
 /* ------- result ------- */
 
+
 /* ------- about ------- */
+
+.about-header{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 30px;
+    margin: 4%;
+}
+.about-description{
+    text-align: justify;
+    font-family: "Courier New", Courier, monospace;
+}
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.card-style{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: white !important; 
+}

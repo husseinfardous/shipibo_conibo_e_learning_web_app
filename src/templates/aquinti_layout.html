@@ -1,5 +1,6 @@
 <!-- Layout file for all pages -->
 <html>
+    
     <head>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,6 +16,7 @@
         {% block scripts %}
 
         {% endblock %}
+
     </head>
 
     <body>
@@ -29,15 +31,16 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" lang="en"  href="#">HOME<span class="sr-only">(current)</span></a>
-                        <a class="nav-link" lang="es"  href="#">INICIO<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" lang="en"  href="/">HOME<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" lang="es"  href="/">INICIO<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">TOOL</a>
+                        <a class="nav-link" lang="en" href="/about_team">TEAM</a>
+                        <a class="nav-link" lang="es" href="/about_team">EQUIPO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" lang="en" href="#">TEAM</a>
-                        <a class="nav-link" lang="es" href="#">EQUIPO</a>
+                        <a class="nav-link" lang="en"  href="#">TOOL</a>
+                        <a class="nav-link" lang="es"  href="#">HERRAMIENTA</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="lang_link" href="#">ESPAÑOL</a>
@@ -47,12 +50,10 @@
 
         </nav>
 
-   
         {% block content %}
 
         {% endblock %}
 
-   
-
     </body>
+
 </html>
