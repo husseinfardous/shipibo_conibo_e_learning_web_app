@@ -98,12 +98,13 @@ function get_target_entry(entry_id){
 
 /************************************** Result Webpage ****************************************/
 function populate_shi_sentence(shi_sentence, named_entity_dict, syllables_dict){
+    console.log(named_entity_dict)
     sentence = shi_sentence.charAt(0).toUpperCase() + shi_sentence.substr(1).toLowerCase()
     word_array = sentence.split(" ")
     $.each(word_array, function(index, word){
         var span_word = $("<span class='original-shi-word'>"+ word +"</span>")
         $(span_word).click(function(){
-            var lowercased_word = word.toLowerCase()
+            var lowercased_word = word.toLowerCase().replace(/[.,\/#?!$%\^&\*;:{}=\-_`~()]/g,"")
             $(".chosen-word").html(lowercased_word)
             $(".named-entity").html(named_entity_dict[lowercased_word])
             $(".syllable-breakdown").html(syllables_dict[lowercased_word])
@@ -163,8 +164,8 @@ function populate_word_pos_tag(morphemes, tags, alignment_dict, spa_sent){
     var spa_sent_words = spa_sent.split(" ")
 
     $.each(spa_sent_words, function(index, word){
-        if (word.toLowerCase() in spanish_colors){
-            var color = spanish_colors[word.toLowerCase()]
+        if (word.toLowerCase().replace(/[.,\/#?!$%\^&\*;:{}=\-_`~()]/g,"") in spanish_colors){
+            var color = spanish_colors[word.toLowerCase().replace(/[.,\/#?!$%\^&\*;:{}=\-_`~()]/g,"")]
             var div = $("<div class=' spanish-word "+ color + "'> " + word +" </div>")
             $(".spanish-segmented-sentence").append(div)
         }
