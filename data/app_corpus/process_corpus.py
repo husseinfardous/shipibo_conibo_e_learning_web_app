@@ -31,12 +31,12 @@ for k, v in dict(zip(temp_shi_sentences, temp_spa_sentences)).items():
     
     if len(re.sub(" +", " ", v.strip()).split()) < 13:
 
-        if k.strip().endswith("?") or k.strip().endswith("."):
+        if k.strip().endswith("?") or k.strip().endswith("!") or k.strip().endswith("."):
             shi_sentences.append(re.sub(" +", " ", k.lower().strip()))
         else:
             shi_sentences.append(re.sub(" +", " ", k.lower().strip()) + ".")
 
-        if v.strip().endswith("?") or v.strip().endswith("."):
+        if v.strip().endswith("?") or v.strip().endswith("!") or v.strip().endswith("."):
             spa_sentences.append(re.sub(" +", " ", v.lower().strip()))
         else:
             spa_sentences.append(re.sub(" +", " ", v.lower().strip()) + ".")

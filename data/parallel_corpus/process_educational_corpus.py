@@ -14,12 +14,12 @@ with open(src_file_name, "r", newline="", encoding="latin-1") as src_file:
 
     for row in corpus_reader:
 
-        if row[2].endswith("?") or row[2].endswith("."):
+        if row[2].endswith("?") or row[2].endswith("!") or row[2].endswith("."):
             shi_sentences.append(row[2].lower())
         else:
             shi_sentences.append(row[2].lower() + ".")
 
-        if row[3].endswith("?") or row[3].endswith("."):
+        if row[3].endswith("?") or row[3].endswith("!") or row[3].endswith("."):
             spa_sentences.append(row[3].lower())
         else:
             spa_sentences.append(row[3].lower() + ".")

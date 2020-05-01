@@ -1,8 +1,8 @@
 adbackoff 0
-c miscellaneous/Dictionary_Sentences.tok.spa_Dictionary_Sentences.tok.shi.snt
+c data/Corpus.tok.spa_Corpus_Morphemes.tok.shi.snt
 compactadtable 1
 compactalignmentformat 0
-corpusfile miscellaneous/Dictionary_Sentences.tok.spa_Dictionary_Sentences.tok.shi.snt
+corpusfile data/Corpus.tok.spa_Corpus_Morphemes.tok.shi.snt
 countcutoff 1e-06
 countcutoffal 1e-05
 countincreasecutoff 1e-06
@@ -19,9 +19,9 @@ emprobforempty 0.4
 emsmoothhmm 2
 hmmdumpfrequency 0
 hmmiterations 5
-l miscellaneous/word_alignment/2020-04-30.191429.husseinfardous.log
+l data/alignment/2020-04-30.211203.husseinfardous.log
 log 0
-logfile miscellaneous/word_alignment/2020-04-30.191429.husseinfardous.log
+logfile data/alignment/2020-04-30.211203.husseinfardous.log
 m1 5
 m2 0
 m3 5
@@ -62,10 +62,10 @@ noiterationsmodel6 0
 nsmooth 64
 nsmoothgeneral 0
 numberofiterationsforhmmalignmentmodel 5
-o miscellaneous/word_alignment/Dictionary_Sentences_Words
+o data/alignment/Corpus_Words_Morphemes
 onlyaldumps 0
-outputfileprefix miscellaneous/word_alignment/Dictionary_Sentences_Words
-outputpath miscellaneous/word_alignment/
+outputfileprefix data/alignment/Corpus_Words_Morphemes
+outputpath data/alignment/
 p 0
 p0 -1
 peggedcutoff 0.03
@@ -73,15 +73,15 @@ pegging 0
 probcutoff 1e-07
 probsmooth 1e-07
 readtableprefix 
-s miscellaneous/Dictionary_Sentences.tok.spa.vcb
-sourcevocabularyfile miscellaneous/Dictionary_Sentences.tok.spa.vcb
-t miscellaneous/Dictionary_Sentences.tok.shi.vcb
+s data/Corpus.tok.spa.vcb
+sourcevocabularyfile data/Corpus.tok.spa.vcb
+t data/Corpus_Morphemes.tok.shi.vcb
 t1 0
 t2 0
 t2to3 0
 t3 0
 t345 0
-targetvocabularyfile miscellaneous/Dictionary_Sentences.tok.shi.vcb
+targetvocabularyfile data/Corpus_Morphemes.tok.shi.vcb
 tc 
 testcorpusfile 
 th 0

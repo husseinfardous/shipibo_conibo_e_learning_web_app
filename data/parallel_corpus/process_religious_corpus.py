@@ -17,12 +17,12 @@ with open(src_file_name, "r") as src_file:
         for sentence in shi_spa_sentences_temp:
             shi_spa_sentences.append(sentence.strip().strip('\"'))
         
-        if shi_spa_sentences[0].endswith("?") or shi_spa_sentences[0].endswith("."):
+        if shi_spa_sentences[0].endswith("?") or shi_spa_sentences[0].endswith("!") or shi_spa_sentences[0].endswith("."):
             shi_sentences.append(shi_spa_sentences[0].lower())
         else:
             shi_sentences.append(shi_spa_sentences[0].lower() + ".")
 
-        if shi_spa_sentences[1].endswith("?") or shi_spa_sentences[1].endswith("."):
+        if shi_spa_sentences[1].endswith("?") or shi_spa_sentences[1].endswith("!") or shi_spa_sentences[1].endswith("."):
             spa_sentences.append(shi_spa_sentences[1].lower())
         else:
             spa_sentences.append(shi_spa_sentences[1].lower() + ".")

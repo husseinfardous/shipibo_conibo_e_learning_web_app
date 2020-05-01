@@ -1,5 +1,4 @@
 import sys
-import re
 import subprocess
 
 import chana.pos_tagger
@@ -20,7 +19,7 @@ with open(src_shi_file_name, "r") as src_shi_file:
     
     for line_index, line_content in enumerate(src_shi_file):
 
-        sentence = re.sub(" +", " ", line_content.lower().strip()[:-1])
+        sentence = line_content.strip()
 
         sentence_pos_tags = pos_tagger.pos_tag(sentence)
 
@@ -77,7 +76,7 @@ with open(src_shi_file_name, "r") as src_shi_file:
                 else:
                     new_sentence += sentence.split()[word_index] + " "
 
-            new_sentence = new_sentence[:-1] + "."
+            new_sentence = new_sentence[:-1]
             sentences.append(new_sentence)
 
             print(str(line_index + 1) + "/" + str(lines_count) + "\t" + new_sentence + "\n")
