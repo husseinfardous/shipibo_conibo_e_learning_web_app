@@ -97,7 +97,7 @@ function get_target_entry(entry_id){
 }
 
 /************************************** Result Webpage ****************************************/
-function populate_shi_sentence(shi_sentence, named_entity_dict, pos_tag_dict){
+function populate_shi_sentence(shi_sentence, named_entity_dict, syllables_dict){
     sentence = shi_sentence.charAt(0).toUpperCase() + shi_sentence.substr(1).toLowerCase()
     word_array = sentence.split(" ")
     $.each(word_array, function(index, word){
@@ -106,7 +106,7 @@ function populate_shi_sentence(shi_sentence, named_entity_dict, pos_tag_dict){
             var lowercased_word = word.toLowerCase()
             $(".chosen-word").html(lowercased_word)
             $(".named-entity").html(named_entity_dict[lowercased_word])
-            $(".syllable-breakdown").html(pos_tag_dict[lowercased_word])
+            $(".syllable-breakdown").html(syllables_dict[lowercased_word])
 
         });
         $(".original-shi-sentence").append(span_word)
@@ -283,7 +283,7 @@ $(document).ready(function(){
     }
 
     if(window.location.pathname.search(/search/) > -1 ){
-        populate_shi_sentence(target_entry['shi_sentence'], target_entry['shi_named_entities'], target_entry['shi_pos_tags'])
+        populate_shi_sentence(target_entry['shi_sentence'], target_entry['shi_named_entities'], target_entry['shi_word_syllables'])
         populate_word_pos_tag(target_entry['shi_word_morphemes'], target_entry['shi_pos_tags'], target_entry['alignment'],target_entry['spa_sentence'] )
 
     }
