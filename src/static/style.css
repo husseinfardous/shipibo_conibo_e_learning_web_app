@@ -1,4 +1,4 @@
-/* ------- layout ------- */
+/* ------- general ------- */
 .horizontal-center{
     display: flex;
     align-items: center;
@@ -22,6 +22,7 @@
 .brand-style{
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 45px;
+    color: maroon !important;
 }
 .navbar-nav > li{
     padding-left:15px;
@@ -92,10 +93,6 @@
     width: 80%;
 }
 
-/* ------- search ------- */
-
-/* ------- result ------- */
-
 
 /* ------- about ------- */
 
@@ -122,3 +119,159 @@
     margin-right: auto;
     border: white !important; 
 }
+
+/* ------- search ------- */
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(shipibo-conibo-black-white-pattern.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#shipibo-input-en{
+    width: 50%;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+#submit-button-en{
+    border-radius: 10px;
+    color: white;
+    background-color: maroon;
+}
+
+#shipibo-input-es{
+    width: 50%;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+#submit-button-es{
+    border-radius: 10px;
+    color: white;
+    background-color: maroon;
+}
+
+#results-header{
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    margin-top: 3%;
+}
+
+#search-results{
+    margin: 2%;
+}
+
+#results-directions{
+    text-align: center;
+}
+
+.direction{
+    color: gray;
+    font-size: 16px;
+}
+
+.shi-sentence{
+    margin: 2%;
+    padding: 1%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+}
+
+.sentence-hover{
+    background-color:#F0F0F0;
+    font-size: 20px;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+/* ------- result ------- */
+.original-shi-sentence{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.spanish-segmented-sentence{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.original-shi-word{
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    margin: 1%;
+    font-size: 24px;
+    color: maroon;
+}
+
+.results-header{
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+.shipibo-conibo-segmented-sentence{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.word-container{
+    margin: 1%;
+}
+
+.shipibo-word{
+    text-align: center;
+}
+
+.pos-tag{
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+    
+}
+
+.background-pink{
+    background-color: lightpink;
+}
+
+.background-blue{
+    background-color: lightskyblue;
+}
+.background-orange{
+    background-color: #FFD247;
+}
+
+.background-purple{
+    background-color: #c9c9ff;
+}
+
+.background-green{
+    background-color: lightseagreen;
+}
+
+.background-grey{
+    background-color: lightgrey;
+}
+.background-yellow{
+    background-color: lightyellow;
+}
+.background-red{
+    background-color: #FF6961;
+}
+
+.spanish-word{
+    margin : 1%; 
+}
+

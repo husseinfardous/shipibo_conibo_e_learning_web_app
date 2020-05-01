@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block scripts %} 
+<script>
+    
+    var language_setting = {{ language_setting | tojson }};
+    var target_entries = {{ target_entries| tojson }};
+
+</script>
+{% endblock %} 
+
+{% block content %}
+    <div class="container-fluid">
+
+        <!-- Search Bar -->
+        <div class="row">
+            <div class="col-md-12 border search-container">
+
+                <input lang="en" type="text" id="shipibo-input-en"  placeholder="Shipibo-Conibo Word or Sentence">
+                <input lang="en" type="button" id="submit-button-en" value="SEARCH">
+
+                <input lang="es" type="text" id="shipibo-input-es"  placeholder="Palabra o Frase en Shipibo-Conibo">
+                <input lang="es" type="button" id="submit-button-es" value="BUSCAR">
+            
+            </div>
+        </div>
+
+        <!-- Search Results Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="results-header">
+                    <h2 lang="en">Entries: </h2>
+                    <h2 lang="es">Entradas: </h2>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Search Results Direction-->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="results-directions">
+                    <div class="direction" lang="en">Click on a sentence to analyze it.</div>
+                    <div class="direction" lang="es"> Haga clic en una oración para analizarla. </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top 10 / All Search Results -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div id="search-results"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        
+    </div>
+{% endblock %}

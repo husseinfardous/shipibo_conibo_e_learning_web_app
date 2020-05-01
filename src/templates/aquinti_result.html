@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block scripts %} 
+<script>
+
+    var language_setting = {{ language_setting | tojson }};
+    var target_entry = {{ target_entry | tojson }};
+
+</script>
+{% endblock %} 
+
+{% block content %}
+    <div class="container-fluid">
+
+        <!-- Word Aligned Sentences with respective morphemes -->
+        <div class="row">
+             <div class="col-md-12">
+                <div class="results-header" lang="en"> Shipibo-Konibo and Spanish Word Alignment: </div>
+                <div class="results-header" lang="es"> Alineamiento de palabras entre Shipibo-Konibo y español: </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="shipibo-conibo-segmented-sentence">
+
+ 
+
+                </div>
+           </div>
+       </div>
+
+       <div class="row">
+        <div class="col-md-12">
+            <div class="spanish-segmented-sentence">
+
+
+
+            </div>
+       </div>
+   </div>
+
+        <!-- Displays Shipibo Conibo Original Sentence -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="original-shi-sentence" lang="en"> </div>
+                <div class="original-shi-sentence" lang="es"> </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="chosen-word horizontal-center" lang="en"> </div>
+                <div class="chosen-word horizontal-center" lang="es"> </div>
+            </div>
+        </div>
+
+        <!-- Named Entity for chosen word -->
+        <div class="row">
+            <div class="col-md-12">
+               <div class="results-header" lang="en"> Choose a word from the Shipibo-Konibo Sentence for its Named Entity: </div>
+               <div class="results-header" lang="es"> Elija una palabra de la oración Shipibo-Konibo para su entidad nombrada: </div>
+           </div>
+       </div>
+        <div class="row">
+            <div class="col-md-12 horizontal-center">
+                <div class="named-entity">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- syllables for chosen word -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="results-header" lang="en"> Choose a Shipibo-Konibo word for it's pronunciation: </div>
+                <div class="results-header" lang="es"> Elija una palabra Shipibo-Konibo para su pronunciación: </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 horizontal-center">
+                <div class="syllable-breakdown">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
