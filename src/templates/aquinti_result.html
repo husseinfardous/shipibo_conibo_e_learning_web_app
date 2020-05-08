@@ -12,11 +12,33 @@
 {% block content %}
     <div class="container-fluid">
 
+        <!-- Displays Shipibo Conibo Original Sentence -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="horizontal-center page-header" lang="en"> Chosen Shipibo-Conibo Sentence: </div>
+                <div class="horizontal-center page-header" lang="es"> Oración Shipibo-Conibo Elegida: </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="original-shi-sentence"> </div>
+            </div>
+        </div>
+
+
         <!-- Word Aligned Sentences with respective morphemes -->
         <div class="row">
              <div class="col-md-12">
-                <div class="results-header" lang="en"> Shipibo-Konibo and Spanish Word Alignment: </div>
-                <div class="results-header" lang="es"> Alineamiento de palabras entre Shipibo-Konibo y español: </div>
+                <div class="search-result-header" lang="en"> Shipibo-Konibo and Spanish Word Alignment: </div>
+                <div class="search-result-header" lang="es"> Alineamiento de palabras entre Shipibo-Konibo y español: </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="direction horizontal-center" lang="en"> Choose a word from the following Shipibo-Conibo Sentence for its Named Entity and Syllabification: </div>
+                <div class="direction horizontal-center" lang="es"> Elija una palabra de la siguiente oración Shipibo-Conibo para su entidad nombrada y silabeo: </div>
             </div>
         </div>
 
@@ -24,67 +46,214 @@
             <div class="col-md-12">
                 <div class="shipibo-conibo-segmented-sentence">
 
- 
-
                 </div>
            </div>
        </div>
 
-       <div class="row">
-        <div class="col-md-12">
-            <div class="spanish-segmented-sentence">
-
-
-
-            </div>
-       </div>
-   </div>
-
-        <!-- Displays Shipibo Conibo Original Sentence -->
         <div class="row">
             <div class="col-md-12">
-                <div class="original-shi-sentence" lang="en"> </div>
-                <div class="original-shi-sentence" lang="es"> </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="chosen-word horizontal-center" lang="en"> </div>
-                <div class="chosen-word horizontal-center" lang="es"> </div>
-            </div>
-        </div>
-
-        <!-- Named Entity for chosen word -->
-        <div class="row">
-            <div class="col-md-12">
-               <div class="results-header" lang="en"> Choose a word from the Shipibo-Konibo Sentence for its Named Entity: </div>
-               <div class="results-header" lang="es"> Elija una palabra de la oración Shipibo-Konibo para su entidad nombrada: </div>
-           </div>
-       </div>
-        <div class="row">
-            <div class="col-md-12 horizontal-center">
-                <div class="named-entity">
+                <div class="spanish-segmented-sentence">
 
                 </div>
             </div>
         </div>
 
-        <!-- syllables for chosen word -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="results-header" lang="en"> Choose a Shipibo-Konibo word for it's pronunciation: </div>
-                <div class="results-header" lang="es"> Elija una palabra Shipibo-Konibo para su pronunciación: </div>
-            </div>
-        </div>
 
         <div class="row">
-            <div class="col-md-12 horizontal-center">
-                <div class="syllable-breakdown">
 
+            <!-- Named Entity for chosen word -->
+            <div class="col-md-4">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="search-result-header" lang="en"> Named Entity: </div>
+                        <div class="search-result-header" lang="es"> Entidad nombrada: </div>
+                    </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-12 horizontal-center">
+                        <div class="named-entity">
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            
+            <div class="col-md-8">
+
+                <!-- syllables for chosen word -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="search-result-header" lang="en"> Pronunciation: </div>
+                        <div class="search-result-header" lang="es"> Pronunciación: </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 horizontal-center">
+                        <div class="syllable-breakdown">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 horizontal-center">
+                        <div class="letter-group-label">
+                            VOWELS: 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 horizontal-center">
+                        <div class="shi-letters">
+
+                            <div> 
+                                <div class="shi-letter">a</div>
+                                <audio id="vowel_a" src="{{ url_for('static', filename='shipibo_a.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_a').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">e</div>
+                                <audio id="vowel_e" src="{{ url_for('static', filename='shipibo_e.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_e').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">i</div>
+                                <audio id="vowel_i" src="{{ url_for('static', filename='shipibo_i.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_i').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">o</div>
+                                <audio id="vowel_o" src="{{ url_for('static', filename='shipibo_o.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_o').play();">volume_up</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 horizontal-center">
+                        <div class="letter-group-label">
+                            CONSONANTS: 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 horizontal-center">
+                        <div class="shi-letters">
+
+                            <div> 
+                                <div class="shi-letter">ba</div>
+                                <audio id="vowel_ba" src="{{ url_for('static', filename='shipibo_ba.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_ba').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">cha</div>
+                                <audio id="vowel_cha" src="{{ url_for('static', filename='shipibo_cha.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_cha').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">ja</div>
+                                <audio id="vowel_ja" src="{{ url_for('static', filename='shipibo_ja.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_ja').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">ka</div>
+                                <audio id="vowel_ka" src="{{ url_for('static', filename='shipibo_ka.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_ka').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">ma</div>
+                                <audio id="vowel_ma" src="{{ url_for('static', filename='shipibo_ma.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_ma').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">na</div>
+                                <audio id="vowel_na" src="{{ url_for('static', filename='shipibo_na.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_na').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">pa</div>
+                                <audio id="vowel_pa" src="{{ url_for('static', filename='shipibo_pa.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_pa').play();">volume_up</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 horizontal-center">
+                        <div class="shi-letters">
+
+                            <div> 
+                                <div class="shi-letter">ra</div>
+                                <audio id="vowel_ra" src="{{ url_for('static', filename='shipibo_ra.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_ra').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">sa</div>
+                                <audio id="vowel_sa" src="{{ url_for('static', filename='shipibo_sa.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_sa').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">sha</div>
+                                <audio id="vowel_sha" src="{{ url_for('static', filename='shipibo_sha.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_sha').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">ta</div>
+                                <audio id="vowel_ta" src="{{ url_for('static', filename='shipibo_ta.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_ta').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">tsa</div>
+                                <audio id="vowel_tsa" src="{{ url_for('static', filename='shipibo_tsa.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_tsa').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">xa</div>
+                                <audio id="vowel_xa" src="{{ url_for('static', filename='shipibo_xa.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_xa').play();">volume_up</a>
+                            </div>
+
+                            <div> 
+                                <div class="shi-letter">ya</div>
+                                <audio id="vowel_ya" src="{{ url_for('static', filename='shipibo_ya.mp4') }}" preload="auto"></audio>
+                                <a class="material-icons" onclick="document.getElementById('vowel_ya').play();">volume_up</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
         </div>
+
+
 
     </div>
 {% endblock %}

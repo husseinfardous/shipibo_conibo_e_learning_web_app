@@ -70,9 +70,9 @@ function display_shi_sentences(shi_entries, search_query){
 // sends a query to flask in order to get an array of shipibo sentences
 function retrieve_shipibo_sentences(search_query){
 
-    shipibo_query = search_query
+    var shipibo_query = search_query
 
-    new_data = {'search_query': shipibo_query}
+    var new_data = {'search_query': shipibo_query}
 
     $.ajax({
         type: "POST",
@@ -97,9 +97,13 @@ function get_target_entry(entry_id){
 }
 
 /************************************** Result Webpage ****************************************/
-function populate_shi_sentence(shi_sentence, named_entity_dict, syllables_dict){
-    console.log(named_entity_dict)
+function display_chosen_shi_sentence(shi_sentence, named_entity_dict, syllables_dict){
+
     sentence = shi_sentence.charAt(0).toUpperCase() + shi_sentence.substr(1).toLowerCase()
+    $(".original-shi-sentence").append(sentence)
+    
+    
+    /** 
     word_array = sentence.split(" ")
     $.each(word_array, function(index, word){
         var span_word = $("<span class='original-shi-word'>"+ word +"</span>")
@@ -110,38 +114,12 @@ function populate_shi_sentence(shi_sentence, named_entity_dict, syllables_dict){
             $(".syllable-breakdown").html(syllables_dict[lowercased_word])
 
         });
-        $(".original-shi-sentence").append(span_word)
+        
     })
+    **/
 }
 
-
-
-/*
-function populate_word_pos_tag(morphemes, tags){
-    var morphemes_array = morphemes.split(" ")
-    var count = 0 
-
-    $.each(morphemes_array, function(index, word){
-        if (count < tags.length && word != '.' && word != '!' && word != '?' && word != ',' && word != ';'){
-            var shipibo_word = $("<div class='shipibo-word'> " + word  + "</div>")
-            var pos_tag = $("<div class='shipibo-word'> " + tags[count]  + "</div>")
-            count = count + 1
-        }
-        else{
-            var shipibo_word = $("<div class='shipibo-word'> " + word  + "</div>")
-            var pos_tag = $("<div class='pos-tag'>"+ "-" + "</div>")
-        }
-
-        var word_pos_tag = shipibo_word.append(pos_tag)
-        var div = $("<div class='word-container'> </div>").append(word_pos_tag)
-
-        $(".shipibo-conibo-segmented-sentence").append(div)
-         
-    })
-   
-
-}
-*/
+/** 
 
 function populate_word_pos_tag(morphemes, tags, alignment_dict, spa_sent){
     var morphemes_array = morphemes.split(" ")
@@ -226,7 +204,49 @@ function populate_word_pos_tag(morphemes, tags, alignment_dict, spa_sent){
          
     })
 }
+**/
 
+function display_word_alignment_shi_sentence(shi_morphemes_string, shi_pos_tag_array, alignment_dictionary, tokenized_spa_sentence){
+
+    // list of class colors to be used for higlighting word alignment 
+    var color_list = ["background-purple", "background-cyan", "background-light-orange", "background-red", "background-yellow", "background-green", "background-pink", "background-blue", "background-blue-green","background-grey", "background-sand", "background-earth-green"]
+
+    // assign each spanish word a color 
+    var spanish_colors = {} 
+    var count = 0 
+    for (k in alignment_dictionary){
+        spanish_colors[k] = color_list[count]
+        count = count + 1 
+    }
+
+    // display spanish words in interface with appropriate higlighting 
+    $.each(tokenized_spa_sentence.split(" "), function(index, word){
+
+        
+        
+        if (word in spanish_colors){
+
+            var div = $("<div class=' spanish-word "+ spanish_colors[word_without_punctuation] + "'> " +  word_without_punctuation + " </div>" )
+            $(".spanish-segmented-sentence").append(div)
+            /*
+            div = $("<div class=' spanish-punctuation'> " +  punctuation + " </div>" )
+            $(".spanish-segmented-sentence").append(div)
+            */
+        }
+        else{
+
+            var div = $("<div class=' spanish-word'> " +  word +" </div>")
+            $(".spanish-segmented-sentence").append(div)
+        }
+        
+
+    })
+
+
+
+
+
+}
 
 
 
@@ -284,8 +304,12 @@ $(document).ready(function(){
     }
 
     if(window.location.pathname.search(/search/) > -1 ){
-        populate_shi_sentence(target_entry['shi_sentence'], target_entry['shi_named_entities'], target_entry['shi_word_syllables'])
-        populate_word_pos_tag(target_entry['shi_word_morphemes'], target_entry['shi_pos_tags'], target_entry['alignment'],target_entry['spa_sentence'] )
+        display_chosen_shi_sentence(target_entry['shi_sentence'], target_entry['shi_named_entities'], target_entry['shi_word_syllables'])
+        //populate_word_pos_tag(target_entry['shi_word_morphemes'], target_entry['shi_pos_tags'], target_entry['alignment'],target_entry['spa_sentence'] )
+        var tokenized_spa = "¿ hola como te llamas ?"
+    
+        display_word_alignment_shi_sentence(target_entry['shi_word_morphemes'], target_entry['shi_pos_tags'], target_entry['alignment'], tokenized_spa)
+        
 
     }
 

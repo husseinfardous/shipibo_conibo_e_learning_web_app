@@ -196,7 +196,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
+    font-size: 25px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
 }
 
 .spanish-segmented-sentence{
@@ -213,11 +214,14 @@
     color: maroon;
 }
 
-.results-header{
+.search-result-header{
     text-align: center;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
-    margin-top: 3%;
-    font-size: 20px;
+    font-size: 25px;
+    color: maroon;
+    font-weight: bold;
+    margin-top: 60px;
+    text-decoration: underline;
 }
 
 .shipibo-conibo-segmented-sentence{
@@ -239,55 +243,70 @@
     text-align: center;
     color: gray;
     font-size: 12px;
-    
-}
-
-.background-pink{
-    background-color: lightpink;
-}
-
-.background-blue{
-    background-color: lightskyblue;
-}
-.background-orange{
-    background-color: #FFD247;
-}
-
-.background-purple{
-    background-color: #c9c9ff;
-}
-
-.background-green{
-    background-color: lightseagreen;
-}
-
-.background-grey{
-    background-color: lightgrey;
-}
-.background-yellow{
-    background-color: lightyellow;
-}
-.background-red{
-    background-color: #FF6961;
-}
-
-.background-bright-green{
-    background-color: springgreen;
-}
-
-.background-bright-yellow{
-    background-color: yellow;
-}
-
-.background-bright-purple{
-    background-color: fuchsia;
-}
-
-.background-bright-orange{
-    background-color: orange;
 }
 
 .spanish-word{
     margin : 1%; 
 }
 
+.shi-letters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header{
+    font-weight: bold;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    font-size: 35px;
+}
+
+.letter-group-label{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.shi-letter{
+    margin-right: 40px;
+}
+
+.background-purple{
+    background-color: #c9c9ff;
+}
+.background-cyan{
+    background-color: #E0FEFE;
+}
+.background-light-orange{
+    background-color: #FFDFD3 ;
+}
+
+.background-red{
+    background-color: lightcoral;
+}
+.background-yellow{
+    background-color: #F7D48B;
+}
+.background-green{
+    background-color: #A1DE93;
+}
+.background-pink{
+    background-color: thistle;
+}
+
+.background-blue{
+    background-color: lightskyblue;
+}
+.background-blue-green{
+    background-color: #87DCC0;
+}
+.background-grey{
+    background-color: lightgrey;
+}
+
+.background-sand{
+    background-color: #FDF7C2 ;
+}
+
+.background-earth-green{
+    background-color:  #D1D693;
+}
