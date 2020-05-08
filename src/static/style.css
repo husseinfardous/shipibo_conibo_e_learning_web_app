@@ -271,6 +271,22 @@
     background-color: #FF6961;
 }
 
+.background-bright-green{
+    background-color: springgreen;
+}
+
+.background-bright-yellow{
+    background-color: yellow;
+}
+
+.background-bright-purple{
+    background-color: fuchsia;
+}
+
+.background-bright-orange{
+    background-color: orange;
+}
+
 .spanish-word{
     margin : 1%; 
 }
