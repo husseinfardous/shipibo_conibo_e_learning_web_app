@@ -1,0 +1,39 @@
+# Sentence pair (1) source length 35 target length 30 alignment score : 9.39715e-43
+ochíti mecha anóxonronki bi ti ik i suqta pani bero , tawa jono joboxko , chunka ni a bo a n &apos; is pei , ka chio ke a . 
+NULL ({ 5 6 7 11 15 25 }) para ({ }) hacer ({ }) a ({ 4 }) un ({ }) perro ({ }) buen ({ }) cazador ({ }) hay ({ }) que ({ 1 }) curarlo ({ 2 }) trayendo ({ 3 }) del ({ 19 }) monte ({ }) sies ({ }) semillas ({ }) de ({ 20 }) yahauarango ({ 8 9 10 }) , ({ }) cuatro ({ 12 }) frutos ({ 13 14 16 }) de ({ }) &quot; ({ 17 }) testículo ({ }) de ({ 18 }) sajino ({ }) &quot; ({ }) y ({ 21 }) diez ({ }) hojas ({ }) de ({ }) tronco ({ }) de ({ }) sacha ({ 22 23 24 26 }) sanango ({ 27 28 29 }) . ({ 30 }) 
+# Sentence pair (2) source length 18 target length 34 alignment score : 6.91512e-55
+bi xon ronki , a t ti ik i jatíbi cha k a ki n ; cha k a ki n senen a xon ronki bi ti ik i westí o ra maseman . 
+NULL ({ 4 7 8 9 27 28 29 }) luego ({ 14 15 20 21 }) de ({ 19 }) obtener ({ 11 12 17 18 }) los ({ }) ingredientes ({ 16 }) , ({ 31 }) se ({ 24 }) machaca ({ 10 }) todo ({ }) y ({ }) se ({ }) pone ({ 5 13 22 23 }) la ({ 2 }) mezcla ({ 3 6 25 }) en ({ 1 26 }) un ({ }) pate ({ 30 32 33 }) . ({ 34 }) 
+# Sentence pair (3) source length 12 target length 17 alignment score : 1.15669e-24
+bi xon ronki , icha ma onpax na chíxo n ki motsa t ti ik i . 
+NULL ({ 4 14 15 16 }) luego ({ }) se ({ }) agrega ({ 1 }) un ({ }) poco ({ }) de ({ }) agua ({ 11 }) y ({ 10 }) se ({ 2 }) mezcla ({ 3 12 13 }) chapeando ({ 5 6 7 8 9 }) . ({ 17 }) 
+# Sentence pair (4) source length 15 target length 15 alignment score : 2.3534e-19
+ja peká o ronki , tawa te pi yochi bi xon netoshti ik i . 
+NULL ({ 5 13 14 }) seguidamente ({ 1 2 }) , ({ 3 }) se ({ }) revientan ({ 7 }) cuatro ({ 6 }) pucuna ({ 8 }) ajies ({ 9 }) y ({ }) se ({ }) los ({ 4 }) agrega ({ 10 }) a ({ }) la ({ 11 }) preparación ({ 12 }) . ({ 15 }) 
+# Sentence pair (5) source length 17 target length 21 alignment score : 1.15599e-31
+na toro n ki no n a t ti ik i yamékiri res , ochíti mecha a t ti kopí . 
+NULL ({ 9 10 11 14 }) esto ({ 2 3 4 5 }) se ({ }) tiene ({ 1 }) que ({ 6 }) hacer ({ 7 }) por ({ }) la ({ }) mañanita ({ 8 12 13 }) , ({ }) para ({ }) que ({ 15 }) el ({ }) perro ({ 19 }) sea ({ 20 }) buen ({ }) cazador ({ 16 17 18 }) . ({ 21 }) 
+# Sentence pair (6) source length 16 target length 19 alignment score : 1.28583e-26
+ja peká o ronki , ja ochíti non mecha akasaiboki yatan ti ik i nishi n , tanexnonxon . 
+NULL ({ 5 12 13 14 17 }) después ({ 8 9 }) agarramos ({ 10 11 15 }) al ({ }) perro ({ }) que ({ 7 }) queremos ({ }) curar ({ }) y ({ 16 }) le ({ }) amarramos ({ 18 }) las ({ }) patas ({ }) con ({ 6 }) una ({ 1 }) soga ({ 2 3 4 }) . ({ 19 }) 
+# Sentence pair (7) source length 12 target length 10 alignment score : 1.14354e-11
+ja peckáo , waxmen pakex bi ti ik i . 
+NULL ({ 3 8 9 }) también ({ 1 2 }) es ({ 4 }) necesario ({ 5 }) tener ({ }) a ({ 6 }) la ({ }) mano ({ }) un ({ 7 }) poco ({ }) de ({ }) algodón ({ }) . ({ 10 }) 
+# Sentence pair (8) source length 15 target length 21 alignment score : 1.93509e-27
+bi xon ronki , ken a ti ik i westí o ra joni , ja n ochíti yatan kin ti . 
+NULL ({ 4 7 8 9 14 }) a ({ 1 }) continuación ({ 3 5 }) , ({ 6 10 11 }) se ({ 2 }) pide ({ }) ayuda ({ 12 13 }) a ({ }) otra ({ }) persona ({ 15 }) para ({ }) que ({ 16 17 }) sostenga ({ 18 19 }) al ({ 20 }) perro ({ }) . ({ 21 }) 
+# Sentence pair (9) source length 9 target length 10 alignment score : 1.67467e-13
+jo ke tian , bitaxmati ik i kishi nko . 
+NULL ({ 4 6 7 }) esta ({ 1 2 3 }) persona ({ }) aprieta ({ }) al ({ }) animal ({ }) entre ({ }) sus ({ 5 }) piernas ({ 8 9 }) . ({ 10 }) 
+# Sentence pair (10) source length 17 target length 15 alignment score : 2.71042e-20
+jaskáribixonra , non jawen kishi bo tashkanxon nexa t ti atipan ke jiwi ki . 
+NULL ({ 2 10 }) de ({ }) igual ({ }) manera ({ 1 }) podemos ({ 3 4 5 7 }) poner ({ 6 }) al ({ }) perro ({ }) patas ({ }) arriba ({ 8 }) y ({ }) amarrarle ({ 9 }) las ({ }) patas ({ 11 }) a ({ }) un ({ }) palo ({ 12 13 14 }) . ({ 15 }) 
+# Sentence pair (11) source length 44 target length 33 alignment score : 4.17827e-56
+ja tian , ja repoaitonin benkex poya n mapo nko yatantaana , westa me ke n waxmen bi xon rao nko pokotaana ochíti repoti ik i , rabé rekin kini nko bi . 
+NULL ({ 3 12 25 26 27 }) mientras ({ 24 28 29 30 31 }) , ({ }) la ({ 19 }) persona ({ }) encargada ({ 23 }) de ({ }) curar ({ }) al ({ }) perro ({ }) ( ({ }) en ({ 32 }) la ({ }) nariz ({ }) ) ({ }) le ({ }) sujeta ({ }) la ({ }) cabeza ({ 2 }) con ({ 1 }) una ({ 4 }) mano ({ }) , ({ }) con ({ }) la ({ }) otra ({ }) mano ({ }) remoja ({ 5 6 7 }) el ({ 16 }) algodón ({ 17 }) en ({ 18 }) el ({ }) remedio ({ 20 21 22 }) previamente ({ }) preparado ({ 9 }) y ({ 8 }) lo ({ }) echa ({ }) en ({ }) las ({ }) fosas ({ 10 11 13 14 }) nasales ({ 15 }) del ({ }) perro ({ }) . ({ 33 }) 
+# Sentence pair (12) source length 20 target length 17 alignment score : 6.02709e-25
+a xon yatantaana , bo xon jene ki pota ti ik i , nashi non ixon . 
+NULL ({ 4 10 11 12 13 }) después ({ }) se ({ 2 }) lleva ({ }) al ({ }) perro ({ }) a ({ }) la ({ }) orilla ({ 3 }) del ({ 5 }) rioy ({ }) se ({ 6 }) le ({ }) bota ({ }) al ({ }) agua ({ 8 }) para ({ 1 }) quse ({ 7 }) se ({ }) bañe ({ 9 14 15 16 }) . ({ 17 }) 
+# Sentence pair (13) source length 14 target length 17 alignment score : 6.67622e-22
+westí o ra nete winó ma xon , kachio bo ti ik i xete ma nonxon . 
+NULL ({ 8 11 12 13 }) al ({ }) día ({ 2 3 4 5 }) siguiente ({ 6 }) , ({ 1 }) se ({ 7 }) lleva ({ 9 10 }) al ({ }) perro ({ }) al ({ }) monte ({ }) para ({ }) hacerlo ({ 14 }) olfatear ({ 15 16 }) . ({ 17 }) 
