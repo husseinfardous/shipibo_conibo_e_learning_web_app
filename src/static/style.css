@@ -63,12 +63,6 @@
     padding-bottom: 4%;
 }
 
-.technology-container{
-    padding: 4%;
-    background-color: burlywood;
-  
-}
-
 .section-title{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 30px;
@@ -93,8 +87,36 @@
     width: 80%;
 }
 
+.ack-container{
+    background-color: whitesmoke;
+    padding: 2%;
+    color: darkgray;
+    font-size: 12px;
+}
+
+.ack-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.ack-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rec-link{
+    color: darkgray;
+}
+
 
 /* ------- about ------- */
+
+.side-column{
+    background-image: url(shipibo-art-blue-yellow.jpg); 
+}
 
 .about-header{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -133,7 +155,7 @@
 
 #shipibo-input-en{
     width: 50%;
-    margin: 2%;
+    margin: 3%;
     padding: 1%;
     border-radius: 5px;
 }
@@ -146,7 +168,7 @@
 
 #shipibo-input-es{
     width: 50%;
-    margin: 2%;
+    margin: 3%;
     padding: 1%;
     border-radius: 5px;
 }
@@ -158,9 +180,12 @@
 }
 
 #results-header{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
     margin-top: 3%;
+    color: maroon;
 }
 
 #search-results{
@@ -191,7 +216,20 @@
     font-weight: bold;
 }
 
+.entries-num{
+    margin-right: 1%;
+
+}
+.query{
+    margin-left: 1%;
+}
+
 /* ------- result ------- */
+.original-sentence-div{
+    background-image: url(shipibo-conibo-pattern-result-pg.jpg); 
+    height: 20%;
+}
+
 .original-shi-sentence{
     display: flex;
     align-items: center;
@@ -224,19 +262,22 @@
     text-decoration: underline;
 }
 
-.shipibo-conibo-segmented-sentence{
+.shi-segmented-sentence{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1%;
 }
-
 .word-container{
     margin: 1%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    font-size: 16px;
 }
 
-.shipibo-word{
-    text-align: center;
+.word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pos-tag{
@@ -245,25 +286,23 @@
     font-size: 12px;
 }
 
-.spanish-word{
-    margin : 1%; 
-}
-
 .shi-letters{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2%;
 }
 
 .page-header{
     font-weight: bold;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
     font-size: 35px;
+    margin-top: 3%;
 }
 
 .letter-group-label{
-    font-weight: bold;
     margin-top: 20px;
+    text-decoration: underline;
 }
 
 .shi-letter{
@@ -310,3 +349,40 @@
 .background-earth-green{
     background-color:  #D1D693;
 }
+
+.syllable-breakdown{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    font-size: 20px;
+    margin: 1%;
+    height: 25px;
+    font-weight: bold;
+}
+
+.named-entity{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    font-size: 20px;
+    margin: 1%;
+    height: 25px;
+    font-weight: bold;
+}
+
+.ner-legend{
+    text-align: center;
+}
+
+.legend-header{
+    text-align: center;
+    margin: 2%;
+    text-decoration: underline;
+}
+
+.ner-legend{
+    margin-bottom: .5%;
+}
+
+.word-hover{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+
