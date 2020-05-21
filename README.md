@@ -6,18 +6,18 @@ In recent years, tools have been built to revitalize the Shipibo-Conibo language
 
 # Team
 
-Hussein Fardous and Janill Lema
-Columbia University
-School of Engineering and Applied Science
-B.S. Computer Science (2020)
+Hussein Fardous and Janill Lema <br/>
+Columbia University <br/>
+School of Engineering and Applied Science <br/>
+B.S. in Computer Science (2020) <br/>
 
 # Credits
 
-[Chana's NLP Toolkit](https://github.com/iapucp/chana-library)
-[Stanza](https://github.com/stanfordnlp/stanza)
-[Shipibo-Conibo Morphological Analyzer](https://github.com/ronaldahmed/morph-shk)
-[Moses](https://github.com/moses-smt/mosesdecoder)
-[Giza++](https://github.com/moses-smt/giza-pp)
-[Chana's Parallel Corpora](http://chana.inf.pucp.edu.pe/resources/parallel-corpus/)
-[Diccionario Shipibo-Castellano](http://repositorio.cultura.gob.pe/handle/CULTURA/443)
-[Transitivity in Shipibo-Konibo Grammar](http://etnolinguistica.wdfiles.com/local--files/tese%3Avalenzuela-2003/valenzuela_2003_transitivity.pdf)
+[Chana's NLP Toolkit](https://github.com/iapucp/chana-library) <br/>
+[Stanza](https://github.com/stanfordnlp/stanza) <br/>
+[Shipibo-Conibo Morphological Analyzer](https://github.com/ronaldahmed/morph-shk) <br/>
+[Moses](https://github.com/moses-smt/mosesdecoder) <br/>
+[Giza++](https://github.com/moses-smt/giza-pp) <br/>
+[Chana's Parallel Corpora](http://chana.inf.pucp.edu.pe/resources/parallel-corpus/) <br/>
+[Diccionario Shipibo-Castellano](http://repositorio.cultura.gob.pe/handle/CULTURA/443) <br/>
+[Transitivity in Shipibo-Konibo Grammar](http://etnolinguistica.wdfiles.com/local--files/tese%3Avalenzuela-2003/valenzuela_2003_transitivity.pdf) <br/>
