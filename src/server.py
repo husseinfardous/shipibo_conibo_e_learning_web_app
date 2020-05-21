@@ -22,7 +22,7 @@ def render_index_html():
 def render_about_team_html():
     return render_template("about_team.html", language_setting=language_setting)
 
-@app.route("/change_language", methods=["POST","GET"])
+@app.route("/change_language", methods=["POST"])
 def change_language():
 
     global language_setting
@@ -37,7 +37,7 @@ def render_search_html():
 
     global all_entries
 
-    if request.method == 'POST':
+    if request.method == "POST":
         
         target_entries = []
         json_data = request.get_json()
@@ -48,6 +48,7 @@ def render_search_html():
                 target_entries.append(shi_dict)
 
         return jsonify(target_entries=target_entries)
+    
     else:
 
         target_entries = all_entries[0: 100]

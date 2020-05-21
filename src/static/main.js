@@ -15,7 +15,7 @@ function change_language(lang_set){
 
     $.ajax({
         type: "POST",
-        url: "change_language",
+        url: "/change_language",
         dataType : "json",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(new_data),
