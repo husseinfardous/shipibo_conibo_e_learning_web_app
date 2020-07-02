@@ -1,12 +1,11 @@
 {% extends "layout.html" %}
 
 {% block scripts %} 
+
 <script>
-
-    var language_setting = {{ language_setting | tojson }};
     var target_entry = {{ target_entry | tojson }};
-
 </script>
+
 {% endblock %} 
 
 {% block content %}
@@ -22,8 +21,8 @@
 
         <div class="row">
             <div class="col-md-12">
-                <div class="horizontal-center page-header" lang="en"> Chosen Shipibo-Conibo Sentence: </div>
-                <div class="horizontal-center page-header" lang="es"> Oración Shipibo-Conibo Elegida: </div>
+                <div class="horizontal-center page-header"> {{ _('Chosen Shipibo-Conibo Sentence:') }}</div>
+                <!-- <div class="horizontal-center page-header" lang="es"> Oración Shipibo-Conibo Elegida: </div> -->
             </div>
         </div>
 
@@ -38,15 +37,15 @@
         <!-- Word Aligned Sentences with respective morphemes -->
         <div class="row">
              <div class="col-md-12">
-                <div class="search-result-header" lang="en"> Shipibo-Conibo and Spanish Word Alignment: </div>
-                <div class="search-result-header" lang="es"> Alineamiento de palabras entre Shipibo-Conibo y español: </div>
+                <div class="search-result-header"> {{ _('Shipibo-Conibo and Spanish Word Alignment:') }} </div>
+                <!-- <div class="search-result-header"> Alineamiento de palabras entre Shipibo-Conibo y español: </div> -->
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-                <div class="direction horizontal-center" lang="en"> Choose a word from the following Shipibo-Conibo Sentence for its Named Entity and Syllabification: </div>
-                <div class="direction horizontal-center" lang="es"> Elija una palabra de la siguiente oración Shipibo-Conibo para su entidad nombrada y silabeo: </div>
+                <div class="direction horizontal-center"> {{ _('Choose a word from the following Shipibo-Conibo Sentence for its Named Entity and Syllabification:') }} </div>
+                <!-- <div class="direction horizontal-center" > Elija una palabra de la siguiente oración Shipibo-Conibo para su entidad nombrada y silabeo: </div> -->
             </div>
         </div>
 
@@ -72,8 +71,8 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="search-result-header" lang="en"> Named Entity: </div>
-                        <div class="search-result-header" lang="es"> Entidad nombrada: </div>
+                        <div class="search-result-header"> {{ _('Named Entity:') }} </div>
+                        <!-- <div class="search-result-header"> Entidad nombrada: </div> -->
                     </div>
                 </div>
 
@@ -87,94 +86,64 @@
 
                 <div class="row">
                     <div class="col-md-12 legend-header">
-                        <div class="legend-header" lang="en">
-                            Named Entity Legend: 
+                        <div class="legend-header">
+                            {{ _('Named Entity Legend:') }}
                         </div>
-                        <div class="legend-header" lang="es">
-                            Leyenda de entidad nombrada: 
-                            
-                        </div>
+                        <!-- <div class="legend-header" lang="es"> Leyenda de entidad nombrada: </div> -->
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
                         <div class="ner-legend" lang="en">
-                            NUM : NUMBER
-
-
+                            {{ _('NUM : NUMBER') }}
                         </div>
-                        <div class="ner-legend" lang="es">
-                            NUM : NÚMERO
-                            
-                        </div>
+                        <!-- <div class="ner-legend" > NUM : NÚMERO </div> -->
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="ner-legend" lang="en">
-                            LOC : LOCATION
-
-
+                        <div class="ner-legend">
+                            {{ _('LOC : LOCATION') }}
                         </div>
-                        <div class="ner-legend" lang="es">
-                            LOC : LOCACIÓN
-                            
-                        </div>
+                        <!-- <div class="ner-legend" lang="es"> LOC : LOCACIÓN</div>-->
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="ner-legend" lang="en">
-                            PER : PROPER NAME / PERSON
-
-
+                        <div class="ner-legend">
+                            {{ _('PER : PROPER NAME / PERSON') }}
                         </div>
-                        <div class="ner-legend" lang="es">
-                            PER : MOMBRE PROPIO / PERSONA
-                            
-                        </div>
+                        <!-- <div class="ner-legend" lang="es">PER : MOMBRE PROPIO / PERSONA</div> -->
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="ner-legend" lang="en">
-                            ORG : ORGANIZATION
-
-
+                        <div class="ner-legend">
+                            {{ _( 'ORG : ORGANIZATION') }}
                         </div>
-                        <div class="ner-legend" lang="es">
-                            ORG : ORGANIZACIÓN
-                        </div>
+                        <!-- <div class="ner-legend" lang="es"> ORG : ORGANIZACIÓN</div> -->
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="ner-legend" lang="en">
-                            FEC : DATE
-
-
+                        <div class="ner-legend">
+                            {{ _( 'FEC : DATE') }}
                         </div>
-                        <div class="ner-legend" lang="es">
-                            FEC : FECHA
-                        </div>
+                        <!-- <div class="ner-legend" lang="es"> FEC : FECHA </div> -->
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="ner-legend" lang="en">
-                            O : UNKNOWN
-
-
+                        <div class="ner-legend">
+                            {{ _('O : UNKNOWN') }}
                         </div>
-                        <div class="ner-legend" lang="es">
-                            O : DESCONOCIDO
-                        </div>
+                        <!-- <div class="ner-legend" lang="es"> O : DESCONOCIDO</div> -->
                     </div>
                 </div>
 
@@ -185,8 +154,8 @@
                 <!-- syllables for chosen word -->
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="search-result-header" lang="en"> Pronunciation: </div>
-                        <div class="search-result-header" lang="es"> Pronunciación: </div>
+                        <div class="search-result-header"> {{ _('Pronunciation:') }} </div>
+                        <!-- <div class="search-result-header" lang="es"> Pronunciación: </div> -->
                     </div>
                 </div>
 

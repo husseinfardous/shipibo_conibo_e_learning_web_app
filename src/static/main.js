@@ -1,36 +1,3 @@
-/************************************** All Webpages ****************************************/
-
-//manages language of the website 
-function change_language(lang_set){
-
-    var new_language = ''
-    if (lang_set === 'ESPANOL'){
-        new_language = 'ENGLISH'
-    }
-    else{
-        new_language = 'ESPANOL'
-    }
-
-    new_data = {'new_language': new_language}
-
-    $.ajax({
-        type: "POST",
-        url: "/change_language",
-        dataType : "json",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(new_data),
-        success: function(result){
-            language_setting = result['language_setting']
-            if (language_setting ==='ESPANOL'){
-                $('#lang_link').text('ENGLISH')
-            }
-            else{
-                $('#lang_link').text('ESPAÑOL')
-            }
-        },
-    });
-}
-
 /************************************** Search Webpage ****************************************/
 
 // displays shipibo sentences on the search page 
@@ -99,7 +66,7 @@ function get_target_entry(entry_id){
     $.ajax({
         url: '/result/' + entry_id,
         success: function(result) {
-            window.location.href =  '/result/' + entry_id
+            window.location.href = '/result/' + entry_id
         }
     });
 }
@@ -192,8 +159,6 @@ function  display_spanish_alignment_sentence(word_to_color, spa_tok_sentence, sp
 }
 
 function display_shipibo_alignment_sentence(morph_index_to_color, shi_tok_sentence, shi_word_morphemes, shi_pos_tag_arr, grp_indices, shi_named_entities, shi_word_syllables){
-    console.log(grp_indices)
-    console.log(morph_index_to_color)
     var shi_tok_morph_array = shi_word_morphemes.split(" ")
     var tok_sentence = shi_tok_sentence.split(" ")
 
@@ -212,8 +177,6 @@ function display_shipibo_alignment_sentence(morph_index_to_color, shi_tok_senten
             if (value in morph_index_to_color){
                 color = morph_index_to_color[value]
             }
-            
-            console.log(color + " " + i + " " + value )
 
             // if the token is a punctation
             if ( shi_tok_morph_array[value] in  punctuations){
@@ -279,61 +242,32 @@ function display_shipibo_alignment_sentence(morph_index_to_color, shi_tok_senten
 
 $(document).ready(function(){
 
-    /************************************** all pages ****************************************/
-    // language setting (applicable for every page)
-    if (language_setting === "ESPANOL"){
-        $('[lang="en"]').hide();
-        $('#lang_link').text('ENGLISH');
-    }
-    else{
-        $('[lang="es"]').hide();
-        $('#lang_link').text('ESPAÑOL'); 
-    }
-
-    $('#lang_link').click(function(){
-        change_language(language_setting);
-        $('[lang="es"]').toggle();
-        $('[lang="en"]').toggle(); 
-    });
 
     /************************************** Search Page ****************************************/
 
-    if(window.location.pathname == '/search'){
+    if(window.location.pathname.search('/search') > -1 ){
 
         // displays initial 10 sentences on the interface
         display_shi_sentences(target_entries, "")
 
         // displays shipibo sentences on the interface after the user inputs a query 
-        $('#submit-button-en').click(function(event){
-            var shipibo_query = $("#shipibo-input-en").val();
+        $('#submit-button').click(function(event){
+            var shipibo_query = $("#shipibo-input").val();
 
             if (shipibo_query != ""){
-                $("#shipibo-input-en").val('')
+                $("#shipibo-input").val('')
                 retrieve_shipibo_sentences(shipibo_query)
             }
             else{
-                $("#shipibo-input-es").focus()
+                $("#shipibo-input").focus()
             }
-        }); 
-
-        $('#submit-button-es').click(function(event){
-            var shipibo_query = $("#shipibo-input-es").val();
-            if (shipibo_query != ""){
-                $("#shipibo-input-es").val('')
-                retrieve_shipibo_sentences(shipibo_query)
-            }
-            else{
-                $("#shipibo-input-es").focus()
-            }
-        }); 
-
+        });  
     }
 
     if(window.location.pathname.search(/result/) > -1 ){
 
         var spa_word_to_color = map_spa_word_to_color(target_entry['alignment'])
         var shi_index_to_color = map_shi_morph_index_to_color(target_entry['alignment'], spa_word_to_color )
-
         display_chosen_shi_sentence(target_entry['shi_sentence'])
         display_spanish_alignment_sentence(spa_word_to_color, target_entry['spa_tok_sentence'], target_entry['spa_pos_tags'])
         display_shipibo_alignment_sentence(shi_index_to_color, target_entry['shi_tok_sentence'], target_entry['shi_word_morphemes'], target_entry['shi_pos_tags'], target_entry['shi_morph_grps_indices'], target_entry['shi_named_entities'], target_entry['shi_word_syllables'])

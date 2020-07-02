@@ -37,19 +37,22 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" lang="en"  href="/">HOME</a>
-                        <a class="nav-link" lang="es"  href="/">INICIO</a>
+                        <a class="nav-link" href="{{ url_for('multilingual_bp.render_index_html') }}"> {{ _( 'HOME' ) }}</a>
+                        <!-- <a class="nav-link" lang="es"  href="/">INICIO</a> -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" lang="en" href="/about_team">TEAM</a>
-                        <a class="nav-link" lang="es" href="/about_team">EQUIPO</a>
+                        <a class="nav-link" href="{{ url_for('multilingual_bp.render_about_team_html') }}">{{ _( 'TEAM' ) }}</a>
+                        <!-- <a class="nav-link" lang="es" href="about_team">EQUIPO</a> -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" lang="en"  href="/search">TOOL</a>
-                        <a class="nav-link" lang="es"  href="/search">HERRAMIENTA</a>
+                        <a class="nav-link" href="{{ url_for('multilingual_bp.render_search_html') }}">{{ _( 'TOOL' ) }}</a>
+                        <!-- <a class="nav-link" lang="es"  href="/search">HERRAMIENTA</a> -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="lang_link" href="#">ENGLISH</a>
+                        <a class="nav-link" id="lang_link" href="{{ url_for(request.endpoint, lang_code='en') }}">ENGLISH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="lang_link" href="{{ url_for(request.endpoint, lang_code='es') }}">ESPAÑOL</a>
                     </li>
                 </ul>
             </div>

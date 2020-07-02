@@ -1,0 +1,153 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-07-02 00:51-0400\n"
+"PO-Revision-Date: 2020-07-02 00:52-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: src/templates/about_team.html:18
+msgid "The Team"
+msgstr "El Equipo"
+
+#: src/templates/about_team.html:27
+msgid ""
+"We are both undergraduate students studying Computer Science at Columbia "
+"University. Aquínti is our final project for a Columbia course titled "
+"Multilingual Technologies and Language Diversity, which explores the "
+"impact of digital technologies on the ecosystem of language diversity. "
+"<br> <br>  In recent years tools have been built to revitalize the "
+"Shipibo-Conibo language; however these tools are only accessible to "
+"researchers and technologists. Therefore, for our final project we chose "
+"to create an e-Learning web app because we wanted to have an impact on "
+"the Shipibo-Conibo Community directly.  We hope that Aquínti is a great "
+"aid to those who wish to recuperate an essential aspect of their "
+"ancestors’ history."
+msgstr "Somos una pareja de estudiantes universitarios que estudian Informática  en Columbia University. Aquínti es nuestro proyecto final para un curso de Columbia titulado Tecnologías multilingües y diversidad de idiomas, que explora el impacto de las tecnologías digitales en el ecosistema de la diversidad de idiomas. <br> <br> En los últimos años se han creado herramientas para revitalizar el lenguaje Shipibo-Conibo; sin embargo, estas herramientas solo son accesibles para investigadores y tecnólogos. Por lo tanto, para nuestro proyecto final, elegimos crear una aplicación web de e-Learning porque queríamos tener un impacto directo en la comunidad Shipibo-Conibo. Esperamos que Aquínti sea de gran ayuda para aquellos que desean recuperar un aspecto esencial de la historia de sus antepasados.Somos una pareja de estudiantes universitarios que estudian Informática  en Columbia University. Aquínti es nuestro proyecto final para un curso de Columbia titulado Tecnologías multilingües y diversidad de idiomas, que explora el impacto de las tecnologías digitales en el ecosistema de la diversidad de idiomas. <br> <br> En los últimos años se han creado herramientas para revitalizar el lenguaje Shipibo-Conibo; sin embargo, estas herramientas solo son accesibles para investigadores y tecnólogos. Por lo tanto, para nuestro proyecto final, elegimos crear una aplicación web de e-Learning porque queríamos tener un impacto directo en la comunidad Shipibo-Conibo. Esperamos que Aquínti sea de gran ayuda para aquellos que desean recuperar un aspecto esencial de la historia de sus antepasados."
+
+#: src/templates/aquinti_result.html:24
+msgid "Chosen Shipibo-Conibo Sentence:"
+msgstr "Oración Shipibo-Conibo Elegida:"
+
+#: src/templates/aquinti_result.html:40
+msgid "Shipibo-Conibo and Spanish Word Alignment:"
+msgstr "Alineamiento de palabras entre Shipibo-Conibo y español:"
+
+#: src/templates/aquinti_result.html:47
+msgid ""
+"Choose a word from the following Shipibo-Conibo Sentence for its Named "
+"Entity and Syllabification:"
+msgstr "Elija una palabra de la siguiente oración Shipibo-Conibo para su entidad nombrada y silabeo:"
+
+#: src/templates/aquinti_result.html:74
+msgid "Named Entity:"
+msgstr "Entidad nombrada:"
+
+#: src/templates/aquinti_result.html:90
+msgid "Named Entity Legend:"
+msgstr "Leyenda de entidad nombrada:"
+
+#: src/templates/aquinti_result.html:99
+msgid "NUM : NUMBER"
+msgstr "NUM : NÚMERO"
+
+#: src/templates/aquinti_result.html:108
+msgid "LOC : LOCATION"
+msgstr "LOC : LOCACIÓN"
+
+#: src/templates/aquinti_result.html:117
+msgid "PER : PROPER NAME / PERSON"
+msgstr "PER : MOMBRE PROPIO / PERSONA"
+
+#: src/templates/aquinti_result.html:126
+msgid "ORG : ORGANIZATION"
+msgstr "ORG : ORGANIZACIÓN"
+
+#: src/templates/aquinti_result.html:135
+msgid "FEC : DATE"
+msgstr "FEC : FECHA"
+
+#: src/templates/aquinti_result.html:144
+msgid "O : UNKNOWN"
+msgstr "O : DESCONOCIDO"
+
+#: src/templates/aquinti_result.html:157
+msgid "Pronunciation:"
+msgstr "Pronunciación:"
+
+#: src/templates/aquinti_search.html:32
+msgid "Entries for:"
+msgstr "Entradas para:"
+
+#: src/templates/aquinti_search.html:43
+msgid "Click on a sentence to analyze it."
+msgstr "Haga clic en una oración para analizarla."
+
+#: src/templates/home.html:17
+msgid "WELCOME TO AQUÍNTI!"
+msgstr "¡BIENVENIDOS A AQUÍNTI!"
+
+#: src/templates/home.html:23
+msgid "An e-learning web app for the Shipibo-Conibo language"
+msgstr "Un aplicación web de aprendizaje electrónico del idioma Shipibo-Conibo"
+
+#: src/templates/home.html:37
+msgid "About the Shipibo-Conibo People"
+msgstr "Sobre La Gente Shipibo-Conibo"
+
+#: src/templates/home.html:39
+msgid ""
+"The Shipibo-Conibo people mainly live along the Ucayali River in the "
+"Amazon rainforest in Peru. They are known for their traditions such as "
+"ayahuasca shamanism and their artisanal skills, which include textile "
+"making, embroidery and pottery. There are currently 22,000 native "
+"speakers of the Shipibo-Conibo language. The current AES (measures how "
+"endangered a language is according to an agglomeration of databases) for "
+"the language is Threatened."
+msgstr "El pueblo Shipibo-Conibo vive principalmente al lado del río Ucayali en la selva amazónica de Perú. Son conocidos por sus tradiciones como el chamanismo de ayahuasca y sus habilidades artesanales, que incluyen la fabricación de textiles, bordados y cerámica. Hoy en día hay 22,000 hablantes nativos del idioma Shipibo-Conibo. El AES (mide qué tan en peligro está un idioma según una aglomeración de bases de datos) para el idioma es Amenazado"
+
+#: src/templates/home.html:50
+msgid "Aquínti's Mission"
+msgstr "La Misión de Aquínti"
+
+#: src/templates/home.html:52
+msgid ""
+"Once children stop using their native language, their language becomes at"
+" <b> risk of extinction </b>. Peru’s official language is Spanish, "
+"therefore children are encouraged to learn how to read and write in it. "
+"As a result, they  become <b>disconnected from their mother tongue </b>, "
+"which holds <b>invaluable knowledge of the world</b>. Aquínti ​hopes to "
+"combat the loss of the Shipibo-Conibo language through its role as a "
+"learning aid for Spanish speakers; more specifically, children attending "
+"school and adults whose ancestors spoke Shipibo-Conibo natively but they "
+"themselves have limited knowledge of the language."
+msgstr "Cuando los niños dejan de usar su idioma nativo, su idioma corre el  <b> riesgo de extinción </b>. El idioma oficial de Perú es el español, por lo tanto,  los niños aprenderen a leer y escribir en él. Como resultado, <b>se desconectan de su lengua materna</b>, que posee un <b>conocimiento invaluable del mundo</b>. Aquínti espera combatir la pérdida del idioma Shipibo-Conibo a través de su papel como ayuda para el aprendizaje de hispanohablantes en Perú; más específicamente, los niños que asisten a la escuela y los adultos cuyos antepasados ​​hablaban Shipibo-Conibo, pero ellos mismos tienen un conocimiento limitado del idioma."
+
+#: src/templates/home.html:64
+msgid "Resources Used:"
+msgstr "Recursos utilizados:"
+
+#: src/templates/layout.html:40
+msgid "HOME"
+msgstr "INICIO"
+
+#: src/templates/layout.html:44
+msgid "TEAM"
+msgstr "EQUIPO"
+
+#: src/templates/layout.html:48
+msgid "TOOL"
+msgstr "HERRAMIENTA"
+

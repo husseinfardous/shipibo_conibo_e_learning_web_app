@@ -153,27 +153,14 @@
     background-size: cover;
 }
 
-#shipibo-input-en{
+#shipibo-input{
     width: 50%;
     margin: 3%;
     padding: 1%;
     border-radius: 5px;
 }
 
-#submit-button-en{
-    border-radius: 10px;
-    color: white;
-    background-color: maroon;
-}
-
-#shipibo-input-es{
-    width: 50%;
-    margin: 3%;
-    padding: 1%;
-    border-radius: 5px;
-}
-
-#submit-button-es{
+#submit-button{
     border-radius: 10px;
     color: white;
     background-color: maroon;
