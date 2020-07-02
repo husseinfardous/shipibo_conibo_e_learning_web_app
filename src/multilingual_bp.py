@@ -7,7 +7,7 @@ from flask_babel import _, refresh
 multilingual_bp = Blueprint("multilingual_bp", __name__, template_folder="templates", url_prefix="/<lang_code>")
 
 app_data = None
-with open("../data/app_corpus/data/app_data.json", "r") as app_data_file:
+with open("/app/data/app_corpus/data/app_data.json", "r") as app_data_file:
     app_data = json.load(app_data_file)
 
 all_entries = [v for k, v in app_data.items()]
