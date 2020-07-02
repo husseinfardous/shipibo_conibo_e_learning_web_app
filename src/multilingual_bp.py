@@ -4,7 +4,6 @@ from flask import Blueprint, g, render_template, request, jsonify, current_app, 
 
 from flask_babel import _, refresh
 
-
 multilingual_bp = Blueprint("multilingual_bp", __name__, template_folder="templates", url_prefix="/<lang_code>")
 
 app_data = None
@@ -53,6 +52,7 @@ def render_search_html():
         target_entries = all_entries[0: 100]
         return render_template("aquinti_search.html", target_entries=target_entries)
 
+@multilingual_bp.route("/result/", defaults={"id": "0"})
 @multilingual_bp.route("/result/<id>", methods=["GET"])
 def get_target_entry(id):
     target_entry = all_entries[int(id)]
