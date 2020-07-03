@@ -1,3 +1,3 @@
 class Config(object):
-    DEBUG = True
+    DEBUG = False
     LANGUAGES = ["en", "es"]
